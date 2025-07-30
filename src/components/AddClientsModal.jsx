@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 
-export default function AddUserModal({ show, onClose, onAdd }) {
+export default function AddClientsModal({ show, onClose, onAdd }) {
     const [formData, setformData] = useState({
         name: '',
         email: '',
@@ -20,7 +20,7 @@ export default function AddUserModal({ show, onClose, onAdd }) {
     return (
         <Modal show={show} onHide={onClose} centered>
             <Modal.Header closeButton>
-                <Modal.Title>Add New User</Modal.Title>
+                <Modal.Title>Add New Client</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <Form>
